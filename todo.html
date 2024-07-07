@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #C39898;
+ }
+ 
+ *{
+    text-decoration: none;
+    list-style: none;
+ }
+
+ .to_do_list{
+    background-color: #ffffff97;
+    width:40%;
+    height:20%;
+    padding:20px;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:32%;
+ }
+ h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    
+ }
+ .list_input{
+    display: flex;
+    gap:20px;
+ }
+ input{
+    width:80%;
+    height:40px;
+    border-radius: 7px;
+    border:1px solid #C39898;
+    padding:7px;
+    font-size: 17px;
+ }
+ .add_task{
+    border-radius: 7px;
+    border:1px solid #C39898;
+    font-family: inherit;
+    font-size: 15px;
+    color:#fff;
+    font-weight: 600;
+    background-color: #C39898;
+ }
+
+.newTask{
+ display: flex;
+ justify-content: space-between;
+ border: none;
+ border-radius: 7px;
+ width:50vw;
+ background-color: #ffffff97;
+ padding:10px;
+ align-items: center;
+}
+.completed {
+   background-color: rgb(209, 194, 194);
+}
+ ul{
+    position: absolute;
+    top:70%;
+    left:25%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+ }
+ .completeBtn,.removeBtn{
+    height:50px;
+    background-color: rgb(37, 191, 37);
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+ }
+ .removeBtn{
+    background-color: rgb(194, 72, 72);
+ }
+ .completeBtn:hover{
+    color:#fff;
+    font-weight: 600;
+    background-color: rgb(62, 171, 62);
+    cursor: pointer;
+    
+ }
+ .removeBtn:hover{
+    color:#fff;
+    font-weight: 600;
+    background-color: rgb(214, 64, 64) ;
+    cursor: pointer;
+ }
+ .btn-con{
+    display: flex;
+    gap:10px;
+ }
+
+</style>
+<body>
+ 
+    
+        <div class="to_do_list">
+            <h3>TO DO LIST</h3>
+            <div class="list_input">
+                <input type="text" placeholder="Enter a task" id="taskinput">
+              <button class="add_task">Add a new task</button>
+            </div>
+        </div>
+        <ul>
+           
+         </ul>
+    
+    
+    
+        
+  <script src="./todo.js"></script>   
+   
+</body>
+</html>
